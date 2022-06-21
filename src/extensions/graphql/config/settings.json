@@ -1,0 +1,10 @@
+{
+  "endpoint": "/graphql",
+  "shadowCRUD": true,
+  "tracing": false,
+  "playgroundAlways": true,
+  "introspection": true,
+  "apolloServer": {
+    "tracing": false
+  }
+}

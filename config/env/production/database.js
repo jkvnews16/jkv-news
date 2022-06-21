@@ -1,7 +1,5 @@
 const parse = require("pg-connection-string").parse;
-const config = parse(
-  "postgres://coctmdoaggtsjr:d4097426e0519961d8663f9e8036289f25469d77a4cb4b4ac7baddb4fddcd48b@ec2-52-22-136-117.compute-1.amazonaws.com:5432/d9vhk7mkungrli"
-);
+const config = parse(process.env.DATABASE_URL);
 
 module.exports = ({ env }) => ({
   connection: {

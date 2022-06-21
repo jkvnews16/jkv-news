@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   proxy: true,
-  url: "https://jkvback.herokuapp.com",
+  url: env("MY_HEROKU_URL"),
   app: {
-    keys: ["tk1"],
+    keys: env.array("APP_KEYS"),
   },
 });
